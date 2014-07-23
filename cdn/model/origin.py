@@ -20,7 +20,7 @@ class Origin(object):
         self._origin = origin
         self.port = port
         self.ssl = ssl
-        self.rules = None
+        self._rules = []
 
     @property
     def origin(self):
@@ -45,7 +45,3 @@ class Origin(object):
     @property
     def rules(self):
         return self._rules
-
-    @rules.setter
-    def rules(self, value):
-        self._rules = value

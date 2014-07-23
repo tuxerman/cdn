@@ -18,7 +18,7 @@ class Restriction(object):
 
     def __init__(self, name):
         self._name = name
-        self.rules = None
+        self._rules = []
 
     @property
     def name(self):
@@ -27,7 +27,3 @@ class Restriction(object):
     @property
     def rules(self):
         return self._rules
-
-    @rules.setter
-    def rules(self, value):
-        self._rules = value

@@ -19,7 +19,7 @@ class CachingRule(object):
     def __init__(self, name, ttl):
         self._name = name
         self.ttl = ttl
-        self.rules = None
+        self._rules = []
 
     @property
     def name(self):
@@ -32,7 +32,3 @@ class CachingRule(object):
     @property
     def rules(self):
         return self._rules
-
-    @rules.setter
-    def rules(self, value):
-        self._rules = value

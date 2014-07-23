@@ -16,13 +16,13 @@
 
 class Service(object):
 
-    def __init__(self, name, domains, origins):
+    def __init__(self, name):
         self._name = name
-        self.domains = None
-        self.origins = None
-        self.caching = None
-        self.restrictions = None
-        self.links = None
+        self._domains = []
+        self._origins = []
+        self._caching = []
+        self._restrictions = []
+        self._links = []
 
     @property
     def name(self):
@@ -32,38 +32,18 @@ class Service(object):
     def domains(self):
         return self._domains
 
-    @domains.setter
-    def domains(self, value):
-        self._domains = value
-
     @property
     def origins(self):
         return self._origins
-
-    @origins.setter
-    def origins(self, value):
-        self._origins = value
 
     @property
     def caching(self):
         return self._caching
 
-    @caching.setter
-    def caching(self, value):
-        self._caching = value
-
     @property
     def restrictions(self):
         return self._restrictions
 
-    @restrictions.setter
-    def restrictions(self, value):
-        self._restrictions = value
-
     @property
     def links(self):
         return self._links
-
-    @links.setter
-    def links(self, value):
-        self._links = value

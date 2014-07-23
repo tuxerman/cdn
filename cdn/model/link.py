@@ -17,8 +17,8 @@
 class Link(object):
 
     def __init__(self, href, rel):
-        self._href = None
-        self._rel = None
+        self._href = href
+        self._rel = rel
 
     @property
     def href(self):
