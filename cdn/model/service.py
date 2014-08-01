@@ -16,10 +16,10 @@
 
 class Service(object):
 
-    def __init__(self, name):
+    def __init__(self, name, domains, origins):
         self._name = name
-        self._domains = []
-        self._origins = []
+        self._domains = domains
+        self._origins = origins
         self._caching = []
         self._restrictions = []
         self._links = []

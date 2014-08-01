@@ -18,8 +18,8 @@ class Origin(object):
 
     def __init__(self, origin, port=80, ssl=False):
         self._origin = origin
-        self.port = port
-        self.ssl = ssl
+        self._port = port
+        self._ssl = ssl
         self._rules = []
 
     @property
